@@ -85,7 +85,7 @@ control-families:
               validated and managed securely. Regularly review certificate
               authorities and automate certificate rotation where possible.
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH02
         guideline-mappings:
@@ -148,7 +148,7 @@ control-families:
               only certificates from trusted authorities are deployed.
         guideline-mappings: []
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH18
       - id: CCC.Core.CN06
@@ -187,7 +187,7 @@ control-families:
               on organizational policies. Validate that child resources can only
               be deployed to locations included in this list.
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH03
         guideline-mappings:
@@ -228,7 +228,7 @@ control-families:
               - tlp-red
             recommendation: ""
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH06
         guideline-mappings:
@@ -293,7 +293,7 @@ control-families:
               service operation so that any changes require stopping the service
               and publishing corresponding events to monitored channels.
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH07
               - reference-id: CCC.Core.TH09
@@ -327,7 +327,7 @@ control-families:
               - tlp-red
             recommendation: ""
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH04
         guideline-mappings:
@@ -355,7 +355,7 @@ control-families:
               - tlp-red
             recommendation: ""
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH01
         guideline-mappings:
@@ -427,7 +427,7 @@ control-families:
             applicability:
               - tlp-red
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH16
         guideline-mappings:
@@ -487,7 +487,7 @@ control-families:
               created regularly. Monitor backup schedules and verify that the
               most recent backup creation date is within the last 14 days.
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH06
                 remarks: Data is Lost or Corrupted
@@ -550,7 +550,7 @@ control-families:
               - tlp-red
             recommendation: ""
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH01
         guideline-mappings:
@@ -626,7 +626,7 @@ control-families:
               - tlp-red
             recommendation: ""
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH01
         guideline-mappings:
@@ -688,7 +688,7 @@ control-families:
             applicability:
               - tlp-red
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH01
         guideline-mappings:
@@ -733,7 +733,7 @@ control-families:
               occasionally review them for patterns that may indicate
               reconnaissance activities.
         threat-mappings:
-          - reference-id: CCC
+          - reference-id: CCC.Core.Threats
             entries:
               - reference-id: CCC.Core.TH15
         guideline-mappings:

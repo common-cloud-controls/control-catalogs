@@ -1,5 +1,5 @@
 imports:
-  - reference-id: CCC
+  - reference-id: CCC.Core.Controls
     entries:
       - reference-id: CCC.Core.CN02
         strength: 0 # Not yet specified
