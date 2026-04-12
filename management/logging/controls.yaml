@@ -42,6 +42,7 @@ control-families:
     controls:
       - id: CCC.Logging.CN01
         title: Centralized and Comprehensive Log Aggregation
+        group: CCC.Core.Observability
         objective: |
           Ensure all operational and security logs from across the cloud environment, including
           applications, operating systems, network traffic, and cloud service activity, are captured
@@ -84,6 +85,7 @@ control-families:
               - reference-id: AU-3
       - id: CCC.Logging.CN02
         title: Enforce Data Retention Policy for Logs
+        group: CCC.Core.Data
         objective: |
           Ensure that the retention period configured for logs aligns with the organization's
           data retention policy.
@@ -123,6 +125,7 @@ control-families:
               - reference-id: AU-11
       - id: CCC.Logging.CN03
         title: Enable Object Lock On Log Bucket
+        group: CCC.Core.Data
         objective: |
           Ensure log immutability by enabling Write Once, Read Many (WORM) protection
           using object lock on log storage buckets. This prevents logs from being modified
@@ -160,6 +163,7 @@ control-families:
     controls:
       - id: CCC.Logging.CN04
         title: Restrict Field And Log Type Access
+        group: CCC.Core.Access
         objective: |
           Configure access to logs to follow the principle of least privilege in particular where technically
           possible limit the log fields users have access to to prevent accidental exposure to sensitive
@@ -198,6 +202,7 @@ control-families:
               - reference-id: PT-3
       - id: CCC.Logging.CN05
         title: Ensure Log Bucket is Not Publicly Accessible
+        group: CCC.Core.Access
         objective: |
           Ensure that log storage buckets are not publicly accessible to prevent unauthorized
           access to sensitive log data. In addition, logs should be replicated to another cloud
@@ -247,6 +252,7 @@ control-families:
     controls:
       - id: CCC.Logging.CN06
         title: Detect and Alert on Potential Log Exfiltration
+        group: CCC.Core.Observability
         objective: |
           Identify and alert on anomalous data access patterns that may indicate an attempt
           to exfiltrate log data.
@@ -281,6 +287,7 @@ control-families:
               - reference-id: AU-6
       - id: CCC.Logging.CN07
         title: Detect and Alert on Log Service Tampering
+        group: CCC.Core.Observability
         objective: |
           Alert when any component of the critical logging infrastructure is disabled, modified,
           or deleted, indicating a defense evasion attempt.

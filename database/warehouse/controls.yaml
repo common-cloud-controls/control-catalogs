@@ -35,6 +35,7 @@ control-families:
     controls:
       - id: CCC.DataWar.CN01
         title: Enforce Use of Managed Views for Data Access
+        group: CCC.Core.Access
         objective: |
           Ensure that data access is provided through managed views, restricting users
           from accessing underlying tables directly and enforcing consistent security policies.
@@ -63,6 +64,7 @@ control-families:
               - reference-id: AC-6
       - id: CCC.DataWar.CN02
         title: Enforce Column-Level Security Policies
+        group: CCC.Core.Access
         objective: |
           Ensure that access to sensitive data columns is restricted based on user roles,
           preventing unauthorized access to sensitive information.
@@ -91,6 +93,7 @@ control-families:
               - reference-id: AC-6
       - id: CCC.DataWar.CN03
         title: Enforce Row-Level Security Policies
+        group: CCC.Core.Access
         objective: |
           Ensure that access to data rows is restricted based on user roles or attributes,
           preventing unauthorized access to specific subsets of data.

@@ -38,6 +38,7 @@ control-families:
     controls:
       - id: CCC.Vector.CN01
         title: Validate Embeddings Before Indexing
+        group: CCC.Core.Ingestion
         objective: |
           Ensure all incoming embeddings are structurally and statistically validated
           before indexing to prevent poisoning or corruption.
@@ -66,6 +67,7 @@ control-families:
                 remarks: Data Filtering From External Knowledge Bases
       - id: CCC.Vector.CN02
         title: Enforce Role-Based Index Lifecycle Management
+        group: CCC.Core.Access
         objective: |
           Restrict index lifecycle operations (create, delete, rollback) to privileged
           identities using fine-grained access controls.
@@ -94,6 +96,7 @@ control-families:
                 remarks: Role-Based Access Control for AI Data
       - id: CCC.Vector.CN03
         title: Enforce Metadata-Level Access Controls
+        group: CCC.Core.Access
         objective: |
           Apply access control policies to metadata fields used in filtering to
           prevent unauthorized exposure or inference.
@@ -124,6 +127,7 @@ control-families:
                 remarks: Preserving Source Data Access Controls in AI Systems
       - id: CCC.Vector.CN04
         title: Enforce Ingestion Quotas and Throttling
+        group: CCC.Core.Ingestion
         objective: |
           Prevent ingestion-based DoS or index pollution by
           rate-limiting vector submissions and enforcing quotas.
@@ -150,6 +154,7 @@ control-families:
                 remarks: Quality of Service (QoS) and DDoS Prevention for AI Systems
       - id: CCC.Vector.CN05
         title: Enforce Index Versioning with Rollback Protection
+        group: CCC.Core.Data
         objective: |
           Ensure vector indexes are versioned and that rollback
           operations are authorized and auditable.
@@ -178,6 +183,7 @@ control-families:
                 remarks: AI System Observability
       - id: CCC.Vector.CN06
         title: Enforce Dimensional and Format Constraints
+        group: CCC.Core.Ingestion
         objective: |
           Reject embeddings that do not conform to expected model
           specifications (dimensions, format, etc).
@@ -204,6 +210,7 @@ control-families:
                 remarks: Data Filtering From External Knowledge Bases
       - id: CCC.Vector.CN07
         title: Support Explicit ANN vs. Exact Search Configuration
+        group: CCC.Core.Compute
         objective: |
           Provide clients with the option to enforce exact-match
           (non-ANN) search where search fidelity is critical.

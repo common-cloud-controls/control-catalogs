@@ -40,6 +40,7 @@ control-families:
     controls:
       - id: CCC.AuditLog.CN01
         title: Implement Digital Signatures With Hash Chaining
+        group: CCC.Core.Data
         objective: |
           Digital signatures allows for external verification of log data tampering and
           hash chaining allows for deleted log files to be detected.
@@ -73,6 +74,7 @@ control-families:
               - reference-id: AU-9
       - id: CCC.AuditLog.CN02
         title: Enable And Validate All Audit Log Types
+        group: CCC.Core.Observability
         objective: |
           Review audit log configuration and ensure that all audit log types
           are being generated and replicated to configured sinks
@@ -102,6 +104,7 @@ control-families:
               - reference-id: AU-12
       - id: CCC.AuditLog.CN03
         title: Alert On Audit Log Changes And Access
+        group: CCC.Core.Observability
         objective: |
           Ensure that specific alerts have been configured to detect changes in
           audit log configuration such as disabling exporting of logs.
@@ -140,6 +143,7 @@ control-families:
               - reference-id: AU-6
       - id: CCC.AuditLog.CN04
         title: Ensure Access Logging Is Enabled on the Audit Log Bucket
+        group: CCC.Core.Observability
         objective: |
           Ensure that access logging is enabled for the audit log storage bucket to
           capture all requests made to the bucket, providing an audit trail of data access.
@@ -176,6 +180,7 @@ control-families:
     controls:
       - id: CCC.AuditLog.CN05
         title: Export Audit Logs To Bucket
+        group: CCC.Core.Data
         objective: |
           Configure audit logs to be sent to a external bucket where they can be globally replicated
           and can be subject to greater access control and data retention polices.
@@ -205,6 +210,7 @@ control-families:
               - reference-id: AU-4
       - id: CCC.AuditLog.CN06
         title: Enforce Retention Policy on Audit Log Bucket
+        group: CCC.Core.Data
         objective: |
           Configure a custom retention policy on the designated audit log bucket to ensure that logs are
           retained for the correct number of days as defined by your organization's policy.
@@ -237,6 +243,7 @@ control-families:
               - reference-id: AU-11
       - id: CCC.AuditLog.CN07
         title: Enforce MFA Delete on Audit Log Bucket
+        group: CCC.Core.Access
         objective: |
           Enable Multi-Factor Authentication (MFA) delete on the audit log bucket to
           provide greater protection against accidental or malicious deletion of audit data.
@@ -269,6 +276,7 @@ control-families:
               - reference-id: AU-11
       - id: CCC.AuditLog.CN08
         title: Enable Object Lock On Audit Log Bucket
+        group: CCC.Core.Data
         objective: |
           Ensure that object log is enabled globally on all objects with the bucket.
           The lock time MUST be configured to meet your organization, legal and compliance goals.
@@ -301,6 +309,7 @@ control-families:
     controls:
       - id: CCC.AuditLog.CN09
         title: Restrict Field And Log Type Access
+        group: CCC.Core.Access
         objective: |
           Configure access to audit logs to follow the principle of least privilege in particular where technically
           possible limit the log fields users have access to to prevent accidental exposure to sensitive
@@ -337,6 +346,7 @@ control-families:
               - reference-id: PT-3
       - id: CCC.AuditLog.CN10
         title: Ensure Audit Bucket is Not Publicly Accessible
+        group: CCC.Core.Access
         objective: |
           Ensure that audit log storage buckets are not publicly accessible to prevent
           unauthorized exposure of sensitive log data.

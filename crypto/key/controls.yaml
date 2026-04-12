@@ -30,6 +30,7 @@ control-families:
     controls:
       - id: CCC.KeyMgmt.CN01
         title: Alert on Key-version Changes
+        group: CCC.Core.Observability
         objective: >
           Generate near-real-time alerts when a KMS key version is disabled or
           scheduled for deletion, enabling rapid investigation and recovery.
@@ -68,6 +69,7 @@ control-families:
     controls:
       - id: CCC.KeyMgmt.CN02
         title: Limit Decrypt Permissions
+        group: CCC.Core.Access
         objective: >
           Restrict the Decrypt operation to authorised principals only, applying
           the principle of least privilege to protect sensitive data.
@@ -105,6 +107,7 @@ control-families:
     controls:
       - id: CCC.KeyMgmt.CN03
         title: Enforce Automatic Rotation
+        group: CCC.Core.Encryption
         objective: >
           Ensure symmetric keys rotate automatically within policy intervals to
           reduce exposure of key material.
@@ -137,6 +140,7 @@ control-families:
 
       - id: CCC.KeyMgmt.CN04
         title: Validate Imported Keys
+        group: CCC.Core.Encryption
         objective: >
           Accept only externally generated keys that meet approved cryptographic
           strength and provenance requirements.

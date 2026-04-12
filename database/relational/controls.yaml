@@ -41,6 +41,7 @@ control-families:
     controls:
       - id: CCC.RDMS.CN01
         title: Password Management
+        group: CCC.Core.Access
         objective: |
           Ensure default vendor-supplied DB administrator credentials are replaced
           with strong, unique passwords and that these credentials are properly
@@ -68,6 +69,7 @@ control-families:
               - reference-id: AC-2
       - id: CCC.RDMS.CN02
         title: Account Lockout and Rate-Limiting
+        group: CCC.Core.Access
         objective: |
           Ensure the database enforces lockouts or rate-limiting after a specified
           number of failed authentication attempts. This prevents brute force
@@ -95,6 +97,7 @@ control-families:
               - reference-id: AC-7
       - id: CCC.RDMS.CN04
         title: Access Control for Backup and Restore Operations
+        group: CCC.Core.Access
         objective: |
           Restrict who can initiate, manage, and validate database backup or
           restore operations through strict role-based or least-privilege
@@ -125,6 +128,7 @@ control-families:
               - reference-id: AC-6
       - id: CCC.RDMS.CN05
         title: Restrict Snapshot Sharing to Authorized Accounts
+        group: CCC.Core.Access
         objective: |
           Ensure database snapshots can only be shared with explicitly authorized
           accounts, thereby minimizing the risk of data exposure or exfiltration.
@@ -153,6 +157,7 @@ control-families:
     controls:
       - id: CCC.RDMS.CN03
         title: Enforce and Monitor Automated Backups
+        group: CCC.Core.Data
         objective: |
           Ensure database backups are automatically scheduled, actively monitored,
           and promptly reported if any disruptions occur. This helps maintain

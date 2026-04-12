@@ -28,6 +28,7 @@ control-families:
     controls:
       - id: CCC.Monitor.CN01
         title: Rate Limiting on External Monitoring
+        group: CCC.Core.Observability
         objective: |
           Prevent DoS attacks using External Monitoring tools.
         assessment-requirements:
@@ -58,6 +59,7 @@ control-families:
               - reference-id: SC-7
       - id: CCC.Monitor.CN02
         title: Rate Limiting on Metric Generation
+        group: CCC.Core.Observability
         objective: |
           Prevent Malicious Actor or misconfiguration from flooding services with metric data.
         assessment-requirements:
@@ -91,6 +93,7 @@ control-families:
     controls:
       - id: CCC.Monitor.CN03
         title: Access External Monitoring
+        group: CCC.Core.Access
         objective: |
           Control access to Synthetic monitoring solutions using API keys or Certificate based authentication to
           ensure they don't become an attack path, preventing monitoring systems from forging network requests to
@@ -124,6 +127,7 @@ control-families:
               - reference-id: AC-3
       - id: CCC.Monitor.CN04
         title: Restrict access to Monitoring Dashboards
+        group: CCC.Core.Access
         objective: |
           Control access to Monitoring Dashboards and reports to ensure they don't highlight an attack path.
         assessment-requirements:
@@ -154,6 +158,7 @@ control-families:
               - reference-id: AC-3
       - id: CCC.Monitor.CN05
         title: Restrict access to silence or acknowledge an alert
+        group: CCC.Core.Access
         objective: |
           Ensure only a subset of users can silence or acknowledge alerts to prevent attackers hiding their activity.
         assessment-requirements:
@@ -182,6 +187,7 @@ control-families:
               - reference-id: AC-3
       - id: CCC.Monitor.CN06
         title: Metrics pushed for authorised services only
+        group: CCC.Core.Access
         objective: |
           Use IAM to control which types of metrics or traces can be pushed by different system to avoid a compromised
           system pushing fabricated metrics about a different service

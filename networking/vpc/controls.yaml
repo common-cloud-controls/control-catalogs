@@ -29,6 +29,7 @@ control-families:
     controls:
       - id: CCC.VPC.CN01
         title: Restrict Default Network Creation
+        group: CCC.Core.Resource
         objective: |
           Restrict the automatic creation of default virtual networks and related
           resources during subscription initialization to avoid insecure default
@@ -61,6 +62,7 @@ control-families:
               - reference-id: SC-7
       - id: CCC.VPC.CN02
         title: Limit Resource Creation in Public Subnet
+        group: CCC.Core.Access
         objective: |
           Restrict the creation of resources in the public subnet with
           direct access to the internet to minimize attack surfaces.
@@ -91,6 +93,7 @@ control-families:
               - reference-id: AC-4
       - id: CCC.VPC.CN03
         title: Restrict VPC Peering to Authorized Accounts
+        group: CCC.Core.Access
         objective: |
           Ensure VPC peering connections are only established with explicitly
           authorized destinations to limit network exposure and enforce boundary
@@ -125,6 +128,7 @@ control-families:
               - reference-id: AC-4
       - id: CCC.VPC.CN04
         title: Enforce VPC Flow Logs on VPCs
+        group: CCC.Core.Observability
         objective: |
           Ensure VPCs are configured with flow logs enabled to capture traffic
           information.

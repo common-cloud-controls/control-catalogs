@@ -26,6 +26,7 @@ control-families:
     controls:
       - id: CCC.Build.CN01
         title: Restrict Allowed Build Agents
+        group: CCC.Core.Access
         objective: |
           Ensure that builds are executed only on authorized build agents to maintain
           control over the build environment and prevent unauthorized code execution.
@@ -53,6 +54,7 @@ control-families:
               - reference-id: AC-6
       - id: CCC.Build.CN02
         title: Restrict Allowed External Services for Build Triggers
+        group: CCC.Core.Access
         objective: |
           Ensure that builds can only be triggered by authorized external services or
           repositories to prevent unauthorized code execution or tampering.
@@ -84,6 +86,7 @@ control-families:
     controls:
       - id: CCC.Build.CN03
         title: Deny External Network Access for Build Environments
+        group: CCC.Core.Access
         objective: |
           Ensure that build environments do not have external network access to
           prevent unauthorized external access and data exfiltration.

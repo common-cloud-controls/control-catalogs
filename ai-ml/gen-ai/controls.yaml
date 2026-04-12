@@ -43,6 +43,7 @@ control-families:
     controls:
       - id: CCC.GenAI.CN01
         title: Model Input Filtering and Sanitisation
+        group: CCC.Core.Data
         objective: |
           Inspect and validate input before it is passed to a GenAI
           model in order to filter or sanitise adversarial queries
@@ -111,6 +112,7 @@ control-families:
 
       - id: CCC.GenAI.CN02
         title: Model Output Filtering and Sanitisation
+        group: CCC.Core.Data
         objective: |
           Inspect and validate GenAI model output before passing it to
           users, applications or plugins in order to filter or sanitise
@@ -185,6 +187,7 @@ control-families:
 
       - id: CCC.GenAI.CN03
         title: Data Provenance and Source Vetting
+        group: CCC.Core.Data
         objective: |
           Ensure that all data for training, fine-tuning or RAG comes
           from trusted, approved sources and is authorised for the
@@ -237,6 +240,7 @@ control-families:
 
       - id: CCC.GenAI.CN04
         title: Sanitisation of Ingested Data
+        group: CCC.Core.Ingestion
         objective: |
           Validate and sanitise all data ingested by GenAI systems
           from extenal sources or internal knowledge bases, whether
@@ -292,6 +296,7 @@ control-families:
 
       - id: CCC.GenAI.CN05
         title: Citations and Source Traceability
+        group: CCC.Core.Observability
         objective: |
           Require the GenAI system to provide citations or direct links
           back to the source documents used to generate a response, in
@@ -336,6 +341,7 @@ control-families:
     controls:
       - id: CCC.GenAI.CN06
         title: Least Privilege for Plugins
+        group: CCC.Core.Access
         objective: |
           Restricts the permissions of any external tools the GenAI system
           can call to limit the potential damage if an agent is coerced
@@ -377,6 +383,7 @@ control-families:
     controls:
       - id: CCC.GenAI.CN07
         title: Model Version Pinning
+        group: CCC.Core.Resource
         objective: |
           Mandate that applications are locked ("pinned") to a specific,
           tested version of a foundational model to prevent unexpected
@@ -415,6 +422,7 @@ control-families:
     controls:
       - id: CCC.GenAI.CN08
         title: Quality Control and Red Teaming
+        group: CCC.Core.Resource
         objective: |
           Establish a formal program for quality evaluation and adversarial
           testing (red teaming) to ensure GenAI system meet all business,
