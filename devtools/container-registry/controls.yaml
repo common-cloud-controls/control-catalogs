@@ -29,7 +29,7 @@ control-families:
     controls:
       - id: CCC.CntrReg.CN01
         title: Implement Vulnerability Scanning for Artifacts
-        group: CCC.Core.Observability
+        group: Observability
         objective: |
           Ensure that container images and artifacts stored in the container registry are scanned for
           vulnerabilities to identify and remediate security issues before deployment.
@@ -60,7 +60,7 @@ control-families:
     controls:
       - id: CCC.CntrReg.CN02
         title: Implement Cleanup Policies for Artifacts
-        group: CCC.Core.Resource
+        group: Resource
         objective: |
           Ensure that unused or outdated artifacts are cleaned up according to defined policies to
           manage storage effectively and reduce security risks associated with outdated versions.

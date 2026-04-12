@@ -24,7 +24,7 @@ controls:
   - id: CCC.ObjStor.CN01
     family: CCC.ObjStor.Data
     title: Prevent Requests to Buckets or Objects with Untrusted KMS Keys
-    group: CCC.Core.Encryption
+    group: Encryption
     objective: |
       Prevent any requests to object storage buckets or objects using
       untrusted KMS keys to protect against unauthorized data encryption,
@@ -94,7 +94,7 @@ controls:
   - id: CCC.ObjStor.CN03
     family: CCC.ObjStor.Data
     title: Prevent Bucket Deletion Through Irrevocable Bucket Retention Policy
-    group: CCC.Core.Data
+    group: Data
     objective: |
       Ensure that object storage bucket is not deleted after creation,
       and that the preventative measure cannot be unset.
@@ -137,7 +137,7 @@ controls:
   - id: CCC.ObjStor.CN04
     family: CCC.ObjStor.Data
     title: Objects have an Effective Retention Policy by Default
-    group: CCC.Core.Data
+    group: Data
     objective: |
       Ensure that all objects stored in the object storage system have a
       retention policy applied by default, preventing premature deletion
@@ -188,7 +188,7 @@ controls:
   - id: CCC.ObjStor.CN05
     family: CCC.ObjStor.Data
     title: Versioning is Enabled for All Objects in the Bucket
-    group: CCC.Core.Data
+    group: Data
     objective: |
       Ensure that versioning is enabled for all objects stored in the object
       storage bucket to enable recovery of previous versions of objects in
@@ -253,7 +253,7 @@ controls:
   - id: CCC.ObjStor.CN07
     family: CCC.ObjStor.Data
     title: Multi-Factor Authentication Is Required for Object Deletion
-    group: CCC.Core.Access
+    group: Access
     objective: |
       Ensure that deletion of objects stored in the object storage system is
       protected by multi-factor authentication (MFA), reducing the risk of
@@ -317,7 +317,7 @@ controls:
   - id: CCC.ObjStor.CN02
     family: CCC.ObjStor.IAM
     title: Enforce Uniform Bucket-level Access to Prevent Inconsistent Permissions
-    group: CCC.Core.Access
+    group: Access
     objective: |
       Ensure that uniform bucket-level access is enforced across all
       object storage buckets. This prevents the use of ad-hoc or

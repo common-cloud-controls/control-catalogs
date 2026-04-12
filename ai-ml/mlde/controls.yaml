@@ -26,7 +26,7 @@ control-families:
     controls:
       - id: CCC.MLDE.CN01
         title: Define Access Mode for ML Development Environments
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Ensure that access to Machine Learning Development Environment (MLDE)
           resources is strictly defined and controlled.
@@ -72,7 +72,7 @@ control-families:
               - reference-id: IAM-02
       - id: CCC.MLDE.CN03
         title: Disable Root Access on MLDE Instances
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Prevent users from obtaining root access on MLDE instances to reduce the
           risk of unauthorized system modifications and potential security breaches.
@@ -115,7 +115,7 @@ control-families:
               - reference-id: 2013 A.9.2.3
       - id: CCC.MLDE.CN04
         title: Disable Terminal Access on MLDE Instances
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Prevent users from accessing the terminal on MLDE instances to limit the risk of
           unauthorized commands and potential system compromise.
@@ -159,7 +159,7 @@ control-families:
     controls:
       - id: CCC.MLDE.CN02
         title: Disable File Downloads on MLDE Instances
-        group: CCC.Core.Data
+        group: Data
         objective: |
           Prevent unauthorized file downloads from MLDE instances to protect sensitive data from being exfiltrated.
         assessment-requirements:
@@ -208,7 +208,7 @@ control-families:
     controls:
       - id: CCC.MLDE.CN05
         title: Restrict Environment Options on MLDE Instances
-        group: CCC.Core.Compute
+        group: Compute
         objective: |
           Limit the virtual machine and container image options available when creating
           new MLDE instances to approved and secure configurations.
@@ -248,7 +248,7 @@ control-families:
     controls:
       - id: CCC.MLDE.CN06
         title: Require Automatic Scheduled Upgrades on User-Managed MLDE Instances
-        group: CCC.Core.Resource
+        group: Resource
         objective: |
           Ensure that MLDE instances are kept up-to-date with the
           latest security patches by enforcing automatic scheduled upgrades.
@@ -298,7 +298,7 @@ control-families:
     controls:
       - id: CCC.MLDE.CN07
         title: Restrict Public IP Access on MLDE Instances
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Prevent public IP access to MLDE instances to reduce exposure to the internet and enhance security.
         assessment-requirements:
@@ -341,7 +341,7 @@ control-families:
               - reference-id: SC-7
       - id: CCC.MLDE.CN08
         title: Restrict Virtual Networks for MLDE Instances
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Limit the virtual networks that can be used when creating new MLDE instances to
           ensure they are deployed within approved and secure network environments.

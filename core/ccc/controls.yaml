@@ -10,7 +10,7 @@ control-families:
     controls:
       - id: CCC.Core.CN01
         title: Encrypt Data for Transmission
-        group: CCC.Core.Encryption
+        group: Encryption
         objective: |
           Ensure that all communications are encrypted in transit to protect
           data integrity and confidentiality.
@@ -106,7 +106,7 @@ control-families:
                 strength: 2
       - id: CCC.Core.CN13
         title: Minimize Lifetime of Encryption and Authentication Certificates
-        group: CCC.Core.Encryption
+        group: Encryption
         objective: |
           Ensure that encryption and authentication certificates have a limited
           lifetime to reduce the risk of compromise and ensure the use of
@@ -155,7 +155,7 @@ control-families:
               - reference-id: CCC.Core.TH18
       - id: CCC.Core.CN06
         title: Restrict Deployments to Trust Perimeter
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Ensure that the service and its child resources are only deployed on
           infrastructure in locations that are explicitly included within a
@@ -201,7 +201,7 @@ control-families:
                 strength: 10
       - id: CCC.Core.CN08
         title: Replicate Data to Multiple Locations
-        group: CCC.Core.Data
+        group: Data
         objective: |
           Ensure that data is replicated across multiple physical locations to
           protect against data loss due to hardware failures, natural disasters,
@@ -249,7 +249,7 @@ control-families:
                 strength: 1
       - id: CCC.Core.CN09
         title: Ensure Integrity of Access Logs
-        group: CCC.Core.Observability
+        group: Observability
         objective: |
           Ensure that access logs are always recorded to an external location
           that cannot be manipulated from the context of the service(s) it
@@ -317,7 +317,7 @@ control-families:
                 strength: 5
       - id: CCC.Core.CN10
         title: Restrict Data Replication to Trust Perimeter
-        group: CCC.Core.Data
+        group: Data
         objective: |
           Ensure that data is only replicated on infrastructure in locations
           that are explicitly included within a defined trust perimeter.
@@ -347,7 +347,7 @@ control-families:
                 strength: 10
       - id: CCC.Core.CN02
         title: Encrypt Data for Storage
-        group: CCC.Core.Encryption
+        group: Encryption
         objective: |
           Ensure that all data stored is encrypted at rest using strong
           encryption algorithms.
@@ -380,7 +380,7 @@ control-families:
               - reference-id: DSP-17
       - id: CCC.Core.CN11
         title: Protect Encryption Keys
-        group: CCC.Core.Encryption
+        group: Encryption
         objective: |
           Ensure that encryption keys are managed securely by enforcing
           the use of approved algorithms, regular key rotation, and
@@ -452,7 +452,7 @@ control-families:
                 strength: 10
       - id: CCC.Core.CN14
         title: Maintain Recent Backups
-        group: CCC.Core.Data
+        group: Data
         objective: |
           Ensure that all backups used for disaster recovery are recent and
           subject to a retention policy that limits deletion.
@@ -512,7 +512,7 @@ control-families:
     controls:
       - id: CCC.Core.CN03
         title: Implement Multi-factor Authentication (MFA) for Access
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Ensure that all sensitive activities require two or more identity
           factors during authentication to prevent unauthorized access.
@@ -571,7 +571,7 @@ control-families:
                 strength: 3
       - id: CCC.Core.CN05
         title: Prevent Access from Untrusted Entities
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Ensure that secure access controls enforce the principle of least
           privilege to restrict access to authorized entities from explicitly
@@ -667,7 +667,7 @@ control-families:
     controls:
       - id: CCC.Core.CN04
         title: Log All Access and Changes
-        group: CCC.Core.Observability
+        group: Observability
         objective: |
           Ensure that all access attempts are logged to maintain a detailed
           audit trail for security and compliance purposes.
@@ -711,7 +711,7 @@ control-families:
                 strength: 5
       - id: CCC.Core.CN07
         title: Alert on Unusual Enumeration Activity
-        group: CCC.Core.Observability
+        group: Observability
         objective: |
           Ensure that logs and associated alerts are generated when
           unusual enumeration activity is detected that may indicate

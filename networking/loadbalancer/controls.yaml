@@ -31,7 +31,7 @@ control-families:
     controls:
       - id: CCC.LB.CN01
         title: Enforce and Detect Rate Limiting
-        group: CCC.Core.Observability
+        group: Resource
         objective: >
           Detect and throttle malicious or excessive requests to prevent
           downstream resource exhaustion and brute-force activity.
@@ -95,7 +95,7 @@ control-families:
 
       - id: CCC.LB.CN06
         title: Secure Health-Check Telemetry
-        group: CCC.Core.Observability
+        group: Observability
         objective: |
           Monitor health-check endpoints for tampering and alert on
           abnormal status changes.
@@ -136,7 +136,7 @@ control-families:
     controls:
       - id: CCC.LB.CN04
         title: Enforce Distribution Policies
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Ensure traffic-splitting weights and algorithms are modified
           only by trusted identities.
@@ -174,7 +174,7 @@ control-families:
 
       - id: CCC.LB.CN05
         title: Validate Session Affinity
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Configure session persistence to minimise fixation and hijacking
           risks.
@@ -208,7 +208,7 @@ control-families:
 
       - id: CCC.LB.CN09
         title: Restrict Management API Access
-        group: CCC.Core.Access
+        group: Access
         objective: |
           Limit load-balancer API calls to authorised identities and
           trusted networks.
@@ -248,7 +248,7 @@ control-families:
     controls:
       - id: CCC.LB.CN02
         title: Auto-Scale Load Balancer Capacity
-        group: CCC.Core.Resource
+        group: Resource
         objective: |
           Expand load-balancer capacity to maintain availability during traffic
           spikes.
@@ -283,7 +283,7 @@ control-families:
 
       - id: CCC.LB.CN07
         title: Scrub Sensitive Headers
-        group: CCC.Core.Data
+        group: Data
         objective: |
           Remove headers that disclose internal details or software
           versions from HTTP responses.
@@ -320,7 +320,7 @@ control-families:
     controls:
       - id: CCC.LB.CN08
         title: Automate Certificate Renewal
-        group: CCC.Core.Encryption
+        group: Encryption
         objective: |
           Maintain valid TLS certificates by automating renewal and
           deployment before expiry.
