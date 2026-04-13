@@ -19,6 +19,8 @@ imports:
         remarks: Prevent Tampering, Deletion, or Unauthorized Access to Access Logs
       - reference-id: CCC.Core.CN10
         remarks: Prevent Data Replication to Destinations Outside of Defined Trust Perimeter
+      - reference-id: CCC.Core.CN19
+        remarks: Require MFA for Deletion of Stored Data
 
 controls:
   - id: CCC.ObjStor.CN01
@@ -246,69 +248,6 @@ controls:
           - reference-id: DSP-17
             remarks: Sensitive Data Protection
             strength: 1 # This is one of many things that will need to be done
-  - id: CCC.ObjStor.CN07
-    title: Multi-Factor Authentication Is Required for Object Deletion
-    group: Access
-    objective: |
-      Ensure that deletion of objects stored in the object storage system is
-      protected by multi-factor authentication (MFA), reducing the risk of
-      accidental, unauthorized, or compromised-credential–based data destruction.
-    assessment-requirements:
-      - id: CCC.ObjStor.CN07.AR01
-        text: |
-          The object storage service MUST support a configuration option that
-          requires MFA to be successfully completed before any object deletion
-          can be attempted, regardless of the request interface.
-        applicability:
-          - tlp-clear
-          - tlp-green
-          - tlp-amber
-          - tlp-red
-        recommendation: ""
-      - id: CCC.ObjStor.CN07.AR02
-        text: |
-          When MFA deletion protection is enabled on a bucket or object
-          namespace, the service MUST deny any deletion request from an identity
-          that has not satisfied the MFA requirement at the time of the request.
-        applicability:
-          - tlp-clear
-          - tlp-green
-          - tlp-amber
-          - tlp-red
-        recommendation: ""
-      - id: CCC.ObjStor.CN07.AR03
-        text: |
-          When an attempt is made to delete an object, the service's audit logs MUST
-          clearly record each deletion attempt, including whether MFA was required
-          and whether validation was met.
-        applicability:
-          - tlp-clear
-          - tlp-green
-          - tlp-amber
-          - tlp-red
-        recommendation: ""
-    threat-mappings:
-      - reference-id: CCC.Core.Threats
-        entries:
-          - reference-id: CCC.Core.TH01
-            remarks: Prevents unauthorized identities from deleting objects
-            strength: 9
-          - reference-id: CCC.Core.TH06
-            remarks: Mitigates malicious or accidental data loss through protected deletion
-            strength: 10
-          - reference-id: CCC.Core.TH17
-            remarks: Ensures deletion requests from unauthorized entities do not result in action
-            strength: 8
-    guideline-mappings:
-      - reference-id: CCM
-        entries:
-          - reference-id: DSP-16
-            remarks: MFA enforcement strengthens data retention and deletion control
-            strength: 8
-          - reference-id: IAM-12
-            remarks: MFA required for privileged or destructive operations
-            strength: 9
-
   - id: CCC.ObjStor.CN02
     title: Enforce Uniform Bucket-level Access to Prevent Inconsistent Permissions
     group: Access
