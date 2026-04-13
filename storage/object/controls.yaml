@@ -276,7 +276,7 @@ controls:
           - tlp-green
           - tlp-amber
           - tlp-red
-        recommendation: ""
+        recommendation: "Consider ensuring the storage service always applies permission sets granted on an object uniformly across all objects in the same bucket. You may verify this by enumerating the permission matrix for a given bucket and confirming that a permission set granted on one object is equally applicable to all other objects in the same bucket."
       - id: CCC.ObjStor.CN02.AR02
         text: |
           When a permission set is denied for an object in a bucket, the
