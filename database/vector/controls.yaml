@@ -31,6 +31,12 @@ imports:
       - reference-id: CCC.Core.CN12
         strength: 0 # Not yet specified
         remarks: Secure Network Access Rules
+      - reference-id: CCC.Core.CN16
+        strength: 0 # Not yet specified
+        remarks: Enforce Data Retention Policies
+      - reference-id: CCC.Core.CN18
+        strength: 0 # Not yet specified
+        remarks: Restrict Field-Level Access to Sensitive Data
 
 controls:
   - id: CCC.Vector.CN01

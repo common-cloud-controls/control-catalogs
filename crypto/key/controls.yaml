@@ -22,6 +22,9 @@ imports:
       - reference-id: CCC.Core.CN10
         strength: 0 # Not yet specified
         remarks: Prevent Data Replication to Destinations Outside Perimeter
+      - reference-id: CCC.Core.CN20
+        strength: 0 # Not yet specified
+        remarks: Alert on Service Configuration Tampering
 
 controls:
   - id: CCC.KeyMgmt.CN01

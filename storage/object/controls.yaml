@@ -19,8 +19,16 @@ imports:
         remarks: Prevent Tampering, Deletion, or Unauthorized Access to Access Logs
       - reference-id: CCC.Core.CN10
         remarks: Prevent Data Replication to Destinations Outside of Defined Trust Perimeter
+      - reference-id: CCC.Core.CN15
+        remarks: Prevent Public Access to Storage Resources
+      - reference-id: CCC.Core.CN16
+        remarks: Enforce Data Retention Policies
+      - reference-id: CCC.Core.CN17
+        remarks: Enable Object Lock for Critical Data
       - reference-id: CCC.Core.CN19
         remarks: Require MFA for Deletion of Stored Data
+      - reference-id: CCC.Core.CN20
+        remarks: Alert on Service Configuration Tampering
 
 controls:
   - id: CCC.ObjStor.CN01

@@ -22,6 +22,9 @@ imports:
       - reference-id: CCC.Core.CN09
         strength: 0 # Not yet specified
         remarks: Prevent Tampering, Deletion, or Unauthorized Access to Access Logs
+      - reference-id: CCC.Core.CN20
+        strength: 0 # Not yet specified
+        remarks: Alert on Service Configuration Tampering
 
 controls:
   - id: CCC.VPC.CN01

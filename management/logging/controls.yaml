@@ -46,6 +46,9 @@ imports:
       - reference-id: CCC.Core.CN18
         strength: 0 # Not yet specified
         remarks: Restrict Field-Level Access to Sensitive Data
+      - reference-id: CCC.Core.CN19
+        strength: 0 # Not yet specified
+        remarks: Require MFA for Deletion of Stored Data
       - reference-id: CCC.Core.CN20
         strength: 0 # Not yet specified
         remarks: Alert on Service Configuration Tampering
